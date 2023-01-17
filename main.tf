@@ -1,5 +1,6 @@
 locals {
-  triggers = (length(var.triggers) > 0 ? var.triggers : { always_run = timestamp() })
+  triggers = var.triggers
+  #triggers = (length(var.triggers) > 0 ? var.triggers : { always_run = timestamp() })
 }
 
 module "shell-escape" {

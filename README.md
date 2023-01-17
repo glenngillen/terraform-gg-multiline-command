@@ -8,7 +8,7 @@ to chain multiple lines of commands together? This is the module for you!
 ```hcl
 module "build" {
   source            = "glenngillen/multiline-command/module"
-  version           = "1.0.1"
+  version           = "1.0.2"
 
   working_dir = "my/build/dir"
   command     = <<EOF
